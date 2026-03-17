@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #fffcf5;
+}
+:root {
+  --bg-color: #F9F7F2;      
+  --text-main: #1A1A1A;    
+  --text-muted: #555555;   
+  --accent-gold: #C5A059;  
+  --border-light: #E0DED8; 
+  --white: #FFFFFF;
+}
+
+#navbar {
+    background-color: #E2E8F0;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+    font-size: 4em;
+    font-family: "Pinyon Script";
+}
+#cart {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: none;
+    border-radius: 50%;
+    padding: 0.5%;
+    position: absolute;
+    right: 5%;
+}
