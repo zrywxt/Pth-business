@@ -39,15 +39,31 @@ scrollToTopButton.addEventListener('click', () => {
 
 const slider = document.querySelector(".display");
 const slides = document.querySelectorAll('.img');
-    function nextSlide() {
-        for (let i = 0; i < slides.length; i++) {
-            slides.forEach((slide) => {
-                slide.classList.add("left");
-            });
-        }
-        
-}
-for (let i = 0; i < slides.length; i++) {
-            setInterval(nextSlide, 1000);
-}
+const right = document.querySelector("#right");
+let idx = 1;
 
+right.addEventListener('click', () => {
+    if (idx >= slides.length) {
+        idx = 0;
+    }
+    let percent = idx * 100;
+    slides.forEach((slide) => {
+        slide.style.transform = `translateX(-${percent}%)`;
+    });
+    idx++;
+});
+function slide() {
+    for(let i = 0; i < slides.length; i++){
+if (idx >= slides.length) {
+        idx = 0;
+    }
+    let percent = idx * 100;
+    slides.forEach((slide) => {
+        slide.style.transform = `translateX(-${percent}%)`;
+    });
+    idx++;
+}
+}
+setTimeout(slide, 1000);
+
+//remove the slider animation, remove the shadows , add the popup animaton and images.

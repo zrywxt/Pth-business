@@ -188,6 +188,7 @@ footer {
     height: 100%;
     width: 100%;
     background-color: rgb(101, 101, 255);
+    animation: slide 10s ease-in-out infinite;
 }
 .img:nth-child(1){
     background-color: red;
@@ -221,4 +222,30 @@ footer {
     background-color: red;
     width: 100px;
     height: 100%;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    45%{
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    70%{
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    99% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
