@@ -36,3 +36,18 @@ scrollToTopButton.addEventListener('click', () => {
         top: 0
     });
 });
+
+const slider = document.querySelector(".display");
+const slides = document.querySelectorAll('.img');
+    function nextSlide() {
+        for (let i = 0; i < slides.length; i++) {
+            slides.forEach((slide) => {
+                slide.classList.add("left");
+            });
+        }
+        
+}
+for (let i = 0; i < slides.length; i++) {
+            setInterval(nextSlide, 1000);
+}
+
