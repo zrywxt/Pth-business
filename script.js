@@ -1,5 +1,5 @@
+// dark theme logic
 const themeSwitch = document.getElementById('themeSwitch');
-
 let darkTheme = localStorage.getItem('darkTheme');
 
 const enableDarkmode = () => {
@@ -22,6 +22,7 @@ themeSwitch.addEventListener('click', () => {
 });
 
 
+// scroll to top logic
 const scrollToTopButton = document.querySelector(".scrollToTopButton");
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > 200) {
@@ -37,13 +38,12 @@ scrollToTopButton.addEventListener('click', () => {
     });
 });
 
+
+// slider logic
 const slider = document.querySelector(".display");
 const slides = document.querySelectorAll('.img');
-const right = document.querySelector("#right");
-const left = document.querySelector("#left");
-var idx = 0;
+let  idx = 0;
 
-let gdx = 1;
 right.addEventListener('click', () => {
     if (idx < slides.length - 1) {
         idx++;
@@ -63,32 +63,17 @@ left.addEventListener('click', () => {
 });
 
 
-
-
-
-
-
-
-
-
-//remove the slider animation, remove the shadows , add the popup animaton and images.
-
-
+// .card popup animaton logic
 const scrollObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            // Add the 'active' class when it scrolls into view
             entry.target.classList.add('active');
-            
-            // Optional: Stop watching once it has popped up once
-            // scrollObserver.unobserve(entry.target);
         }
     });
 }, { 
-    threshold: 0.15 // Trigger when 15% of the div is visible
+    threshold: 0.15
 });
 
-// Select all divs you want to animate and start watching them
 document.querySelectorAll('.card').forEach(div => {
     scrollObserver.observe(div);
 });
