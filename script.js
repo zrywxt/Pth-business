@@ -40,30 +40,55 @@ scrollToTopButton.addEventListener('click', () => {
 const slider = document.querySelector(".display");
 const slides = document.querySelectorAll('.img');
 const right = document.querySelector("#right");
-let idx = 1;
+const left = document.querySelector("#left");
+var idx = 0;
 
+let gdx = 1;
 right.addEventListener('click', () => {
-    if (idx >= slides.length) {
-        idx = 0;
+    if (idx < slides.length - 1) {
+        idx++;
+        slides.forEach((slide) => { 
+            slide.style.transform = `translateX(-${idx * 100}%)`;
+        });
     }
-    let percent = idx * 100;
-    slides.forEach((slide) => {
-        slide.style.transform = `translateX(-${percent}%)`;
-    });
-    idx++;
 });
-function slide() {
-    for(let i = 0; i < slides.length; i++){
-if (idx >= slides.length) {
-        idx = 0;
+
+left.addEventListener('click', () => {
+    if (idx > 0) {
+        idx--;
+        slides.forEach((slide) => { 
+            slide.style.transform = `translateX(-${idx * 100}%)`;
+        });
     }
-    let percent = idx * 100;
-    slides.forEach((slide) => {
-        slide.style.transform = `translateX(-${percent}%)`;
-    });
-    idx++;
-}
-}
-setTimeout(slide, 1000);
+});
+
+
+
+
+
+
+
+
+
 
 //remove the slider animation, remove the shadows , add the popup animaton and images.
+
+
+const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Add the 'active' class when it scrolls into view
+            entry.target.classList.add('active');
+            
+            // Optional: Stop watching once it has popped up once
+            // scrollObserver.unobserve(entry.target);
+        }
+    });
+}, { 
+    threshold: 0.15 // Trigger when 15% of the div is visible
+});
+
+// Select all divs you want to animate and start watching them
+document.querySelectorAll('.card').forEach(div => {
+    scrollObserver.observe(div);
+});

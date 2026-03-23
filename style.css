@@ -20,19 +20,22 @@ body {
     src: url('fonts/PinyonScript.ttf') format("truetype");
 }
 :root {
-  --bg-color: #fffbf0;      
+  --bg-color: #fff6dc;      
   --text-main: #1A1A1A;    
   --text-muted: #555555;   
   --accent-gold: #ffa600;  
   --border-light: #E0DED8; 
   --white: #FFFFFF;
   --accent-main: #d2e5ff;
+  --black: #000;
 }
 .darkTheme {
     --bg-color: #1a1a1a;
     --text-main: #f9f7f2;
     --text-muted: #e0ded8;
     --accent-main: #338bff;
+    --white: #000;
+    --black: #ffffff;
 }
 #navbar {
     background-color: var(--accent-main);
@@ -43,13 +46,13 @@ body {
 }
 h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     font-family: "Pinyon Script";
     color: var(--text-main);
 }
 #cart {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border: none;
     border-radius: none;
     border-radius: 50%;
@@ -62,8 +65,8 @@ h1 {
 
 
 #themeSwitch {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border: none;
     cursor: pointer;
     border-radius: 50%;
@@ -74,7 +77,6 @@ h1 {
     position: absolute;
     left: 5%;
     padding: 0.5%;
-    box-shadow: 1px 1px 15px #b4d3ff inset, -1px -1px 15px #b4d3ff inset;
 }
 .darkTheme #themeSwitch {
         box-shadow: none;
@@ -152,17 +154,42 @@ footer {
 .card {
     height: 500px;
     width: 600px;
-    background-color: var(--accent-main);
+    /* background-color: var(--white); */
     border-radius: 15px;
     margin-left: calc(50% - 300px);
-    box-shadow: 5px 5px 60px #1A1A1A;
     margin-bottom: 20%;
     margin-top: 10%;
-}
-.darkTheme .card {
-    box-shadow: 5px 5px 60px #939393;
+    opacity: 0;
+    transform: translateY(80px); /* Slightly down and smaller */
+    transition: all 0.8s;
+    background-image: url("STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg");
+    background-size: cover;
 }
 
+
+/* 1. The starting state (Hidden) */
+
+/* 2. The finished state (Visible) */
+.card.active {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* Back to normal position/size */
+}
+
+
+.card:nth-child(1) {
+    background-image: url('Mr. Bean.jpeg');
+}
+.card:nth-child(2) {
+    background-image: url("STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg");
+}
+
+.card:nth-child(3) {
+    background-image: url("abstract-chess-pieces-digital-art-style.jpg");
+}
+
+.card:nth-child(4) {
+    background-image: url("pexels-pixabay-86596.jpg");
+}
 
 
 
@@ -178,8 +205,8 @@ footer {
     width: 80%;
     border-radius: 10px;
     background-color: rgb(255, 165, 165);
-    margin-top: 1%;
-    margin-left: 10%;
+    /* margin-top: 1%;
+    margin-left: 10%; */
     overflow: hidden;
     display: flex;
 }
@@ -188,25 +215,19 @@ footer {
     height: 100%;
     width: 100%;
     background-color: rgb(101, 101, 255);
-    animation: slide 10s ease-in-out infinite;
+    background-size: cover;
 }
 .img:nth-child(1){
-    background-color: red;
+    background-image: url("4k Desktop Wallpapers Pc.jpg");
 }
 .img:nth-child(2){
-    background-color: rgb(21, 255, 0);
+    background-image: url("Don Williams.jpg");
 }
 .img:nth-child(3){
-    background-color: rgb(255, 238, 0);
+    background-image: url("STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg");
 }
 .img:nth-child(4){
-    background-color: rgb(195, 0, 255);
-}
-.left {
-    transform: translateX(-100%);
-}
-.right {
-    transform: translateX(100%);
+    background-image: url("pexels-pixabay-86596.jpg");
 }
 #displayControls {
     width: 80%;
@@ -218,34 +239,19 @@ footer {
 #displayControls button {
     width: 50px;
 }
-#pageNo {
-    background-color: red;
-    width: 100px;
-    height: 100%;
+#box {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2%;
 }
-@keyframes slide {
-    0% {
-        transform: translateX(0%);
-    }
-    25% {
-        transform: translateX(-100%);
-    }
-    45%{
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(-200%);
-    }
-    70%{
-        transform: translateX(-200%);
-    }
-    75% {
-        transform: translateX(-300%);
-    }
-    99% {
-        transform: translateX(-300%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
+#left {
+    display: inline;
+    height: 50px;
+    width: 50px;
+}
+#right{
+    height: 50px;
+    width: 50px;
 }
