@@ -23,7 +23,7 @@
   --accent-gold: #ffa600;  
   --border-light: #E0DED8; 
   --white: #FFFFFF;
-  --accent-main: #bfdaff;
+  --accent-main: #f0c0ff;
   --black: #000;
 }
 
@@ -31,13 +31,13 @@
     --bg-color: #1a1a1a;
     --text-main: #f9f7f2;
     --text-muted: #e0ded8;
-    --accent-main: #006eff;
-    --white: #000;
+    --accent-main: #2f3f36;
+    --white: #2f3f36;
     --black: #ffffff;
 }
 
 ::selection {
-    background-color: #acff2f6e !important;
+    background-color: #acff2f38 !important;
 }
 
 body {
@@ -46,10 +46,11 @@ body {
 
 #navbar {
     background-color: black;
-    padding: 0.25%;
+    /* padding: 0.25%; */
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 10vh;
 }
 
 #themeSwitch {
@@ -89,7 +90,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-family: "PlaywriteIN";
     color: white;
     font-weight: 400;
@@ -110,10 +111,10 @@ h1 {
 .scrollToTopButton {
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 20px;
     height: 40px;
     width: 40px;
-    background-color: var(--accent-main);
+    background-color: #2f3f36;
     text-align: center;
     opacity: 0;
     transition: all 0.3s;
@@ -122,6 +123,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
 .scrollToTopButton:hover {
@@ -137,24 +139,26 @@ h1 {
 
 #box {
     width: 100%;
+    height: 90vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 1%;
 }
 
 #box button {
-    background-color: var(--accent-main);
+    background-color: #2f3f36;
     border: none;
     width: 40px;
     height: 40px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .display {
-    height: 500px;
+    height: 100%;
     width: 90%;
-    border-radius: 10px;
     background-color: transparent;
     overflow: hidden;
     display: flex;
@@ -186,11 +190,10 @@ h1 {
 }
 
 .card {
-    height: 500px;
-    width: 600px;
-    /* background-color: var(--white); */
+    height: 90vh;
+    width: 50%;
     border-radius: 15px;
-    margin-left: calc(50% - 300px);
+    margin-left: 25%;
     margin-bottom: 20%;
     margin-top: 10%;
     opacity: 0;
