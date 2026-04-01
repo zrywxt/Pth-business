@@ -115,22 +115,39 @@ h1 {
 
 } */
 
+.container {
+    display: block;
+}
 .con {
     display: inline-block;
-    width: 40%;
+    width: 25%;
     border-radius: 15px;
     box-shadow: 5px 5px 20px #d6d6d6  inset, -5px -5px 20px #d6d6d6 inset;
     padding: 2%;
     height: 70vh;
-    margin-left: 2%;
-    margin-top: 2%;
+    margin-left: 3%;
+    margin-top: 7%;
+    background-color: rgb(255, 255, 250);
+    opacity: 0;
+    transform: translateY(80px);
+    overflow: hidden;
 
 }
-.img:hover {
-    
+.con:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
 }
-
-
+.con p {
+    line-height: 20px;
+    margin-top: 5%;
+}
+.visible{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+h2 {
+    color: black;
+}
 footer {
     background-color: black;
     position: static;

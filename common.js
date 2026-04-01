@@ -1,28 +1,133 @@
 let products = [
     {
-    name : "hellasd",
+    name : "Title",
     img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
-    des : "lorem ispum dolor sit ametsectutur constecutor adipiscising elit."
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!."
     },
     {
-    name : "xsdjlkvdn",
+    name : "Title",
     img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
-    des : "arebhk  ih ihgiu wuqier hgihdakg oi hi djo khgioad h."
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
     },
     {
-    name : "xsdjlkvdn",
+    name : "Title",
     img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
-    des : "arebhk  ih ihgiu wuqier hgihdakg oi hi djo khgioad h."
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
     },
     {
-    name : "xsdjlkvdn",
+    name : "Title",
     img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
-    des : "arebhk  ih ihgiu wuqier hgihdakg oi hi djo khgioad h."
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
     },
     {
-    name : "xsdjlkvdn",
+    name : "Title",
     img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
-    des : "arebhk  ih ihgiu wuqier hgihdakg oi hi djo khgioad h."
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
+    },
+    {
+    name : "Title",
+    img : "STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg",
+    des : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis nam culpa animi a aperiam corrupti eaque tenetur et libero minus obcaecati eveniet sunt ex illum assumenda, nesciunt illo autem!"
     }
     
 ]
@@ -38,14 +143,29 @@ products.forEach(item =>  {
             .img {
                 background: url("${item.img}");
                 height: 60%;
-                width: 60%;
+                width: 80%;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                margin-left: 21%;
+                margin-left: 11%;
                 border-radius: 5px;
+                margin-bottom: 5%;
             }
         </style>
     `;
     container.appendChild(card);
+});
+
+const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { 
+    threshold: 0.15
+});
+
+document.querySelectorAll('.con').forEach(div => {
+    scrollObserver.observe(div);
 });
