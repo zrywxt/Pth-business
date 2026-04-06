@@ -155,7 +155,7 @@ products.forEach(item =>  {
     `;
     container.appendChild(card);
     card.addEventListener('click', (e) => {
-        const url = `product.html?name=${encodeURIComponent(item.name)}&img=${encodeURIComponent(item.img)}&des=${encodeURIComponent(item.des)}`;
+        const url = `product page.html?name=${encodeURIComponent(item.name)}&img=${encodeURIComponent(item.img)}&des=${encodeURIComponent(item.des)}`;
     window.open(url, '_blank');
     });
 });
