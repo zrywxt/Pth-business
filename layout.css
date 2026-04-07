@@ -128,7 +128,7 @@ h1 {
     margin-left: 3%;
     margin-top: 7%;
     background-color: rgb(255, 255, 250);
-    opacity: 0;
+    opacity: 1;
     transform: translateY(80px);
     overflow: hidden;
 

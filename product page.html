@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="product-display">
+    <div id="product-img"></div>
+    <h2 id="product-name"></h2>
+    <p id="product-des"></p>
+</div>
+</body>
+<script>
+    // 1. Grab the parameters from the address bar
+const params = new URLSearchParams(window.location.search);
+
+// 2. Extract the individual pieces of data
+const name = params.get('name');
+const img = params.get('img');
+const des = params.get('des');
+
+// 3. Inject them into the page elements
+if (name) {
+    document.getElementById('product-name').innerText = name;
+    document.getElementById('product-des').innerText = des;
+    
+    // Setting the background image to match your style
+    const imgDiv = document.getElementById('product-img');
+    imgDiv.style.backgroundImage = `url("${img}")`;
+    imgDiv.style.backgroundSize = "cover";
+    imgDiv.style.backgroundPosition = "center";
+}
+</script>
+</html>
