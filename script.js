@@ -38,8 +38,6 @@ scrollToTopButton.addEventListener('click', () => {
     });
 });
 
-
-// slider logic
 const slider = document.querySelector(".display");
 const slides = document.querySelectorAll('.img');
 let  idx = 0;
